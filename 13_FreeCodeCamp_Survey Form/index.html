@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey-Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">We value your opinion!</h1>
+  <p id="description">Your feedback will help us to become better.<p>
+    <form id="survey-form">
+      <label for="name" id="name-label">Your full name: <input id="name" type: text; placeholder="John Smith" required /></label><br>
+      <label for="email" id="email-label">Your email: <input id="email" type="email" placeholder="john@smith.com" required /></label><br>
+      <label for="number" id="number-label">Your age: <input id="number" type="number" min="18" max="120" placeholder="18" /></label></br>
+      <label for="dropdown">How did you hear about us?
+        <select id="dropdown" required>
+          <option value="">(choose one)</option>
+          <option value="searchengine")>Search Engine (google, bing etc.</option>
+          <option value="facebook">Social media (Facebook, Instagram etc.</option>
+        </select>
+      </label></br>
+      <label for="docontact"><input type="radio" class="inline" name="contact" id="docontact" value="docontact" checked /> Please contact me.</label><br>
+      <label for="donotconcact"><input type="radio" class="inline" name="contact" id="donotcontact" value="donotcontact" /> Please do not contact me.</label><br>
+      <fieldset>
+        <legend>What do you value most?</legend>
+        <label for="price">Price <input type="checkbox" id="price" value="price" name="value" checked></label>
+        <label for="quality">Quality <input type="checkbox" id="quality" value="quality" name="value"></label>
+        <label for="speed">Speed <input type="checkbox" id="speed" value="speed" name="value"></label>
+      </fieldset>
+      <label for="message">Please leave us a message:</label>
+      <textarea id="message" name="message" rows="3" cols="30" placeholder="What should we improve or everything works perfectly?"></textarea>
+      <br>
+      <button id="submit">Submit</button>
+    </form>
+</body>
